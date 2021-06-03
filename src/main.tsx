@@ -11,7 +11,6 @@ import "tailwindcss/tailwind.css"
 const App = () => {
     return(
         <Router>
-            <Nav />
             <Switch>
                 <Route path="/" exact component={Index} />
                 <Route path="" component={NotFound} />

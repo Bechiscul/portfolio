@@ -1,9 +1,14 @@
 import React from 'react'
 
+import Sidebar from "../components/Sidebar"
+
 const Index = () => {
     return (
-        <div>
-            Index
+        <div className="grid grid-cols-12">
+            <Sidebar />
+            <div className="col-auto">
+                <p>Container</p>
+            </div>
         </div>
     )
 }
