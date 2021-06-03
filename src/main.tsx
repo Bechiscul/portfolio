@@ -10,12 +10,15 @@ import "tailwindcss/tailwind.css"
 
 const App = () => {
     return(
-        <Router>
-            <Switch>
-                <Route path="/" exact component={Index} />
-                <Route path="" component={NotFound} />
-            </Switch>
-        </Router>
+        <React.StrictMode>
+            <Router>
+                <Switch>
+                    <Route path="/" exact component={Index} />
+                    <Route path="/index.html" exact component={Index} />
+                    <Route path="" component={NotFound} />
+                </Switch>
+            </Router>
+        </React.StrictMode>
     );
 }
 

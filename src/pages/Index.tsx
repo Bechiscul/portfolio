@@ -1,13 +1,20 @@
 import React from 'react'
 
+import Nav from "../components/Nav"
 import Sidebar from "../components/Sidebar"
 
 const Index = () => {
     return (
-        <div className="grid grid-cols-12">
+        <div className="flex">
             <Sidebar />
-            <div className="col-auto">
-                <p>Container</p>
+            <div className="w-auto flex-grow flex flex-col">
+                <Nav />
+                <div className="flex-grow flex items-center justify-center">
+                    <div>
+                        <p className="font-roboto text-gray-500 uppercase tracking-wide">Developer & Student</p>
+                        <h1 className="text-5xl font-roboto">Hello! I'm Sebastian.</h1>
+                    </div>
+                </div>
             </div>
         </div>
     )
